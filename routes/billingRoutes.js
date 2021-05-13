@@ -9,6 +9,6 @@ module.exports = app => {
             description: '$5 for 5 credits',
             source: req.body.id
         })
-        console.log(charge)
+        req.user.credits += 5
     })
 }
